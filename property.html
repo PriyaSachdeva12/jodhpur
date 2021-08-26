@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Jodhpur</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <!-- CDN link used below is compatible with this example -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+       <!-- CDN link used below Font Family Poppins -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="scss/property.css">
+   </head>
+   <body>
+      <div class="container" >
+         <!-- Start Heading  -->
+         <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 mt-4">
+               <h2 class="mb-0">Property List</h2>
+            </div>
+         </div>
+         <!-- End Heading -->
+         <!-- Start Search content -->
+         <div class="form-area">
+            <div class="container">
+                <div class="search-content">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <h3>Search Property</h3>
+                        </div>
+                        <div class="col col-md-3">
+                           <div class="form-group">
+                               <label for="sel1">Select Tax Type<span>*</span></label>
+                               <select class="selectpicker form-control" id="sel1" placeholder="">
+                                   <option value="">Select Tax Type</option>
+                                   <option>1</option>
+                                   <option>2</option>
+                                   <option>3</option>7
+                                   <option>4</option>
+                               </select>
+                           </div>
+                       </div>
+                        <div class="col col-md-3">
+                            <div class="form-group">
+                                <label for="Property">UID/Service No.<span>*</span></label>
+                                <input type="text" class="form-control" id="Property" placeholder="1A9CMD40" />
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                            <div class="form-group">
+                                <label for="usr">HAccount Holder’s Name</label>
+                                <input type="text" class="form-control" id="usr" placeholder="Enter Account Holder’s Name " />
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                            <div class="form-group">
+                                <label for="usr">Address</label>
+                                <input type="text" class="form-control" id="usr" placeholder="Enter Address" />
+                            </div>
+                        </div>
+                       
+                        <div class="col col-md-3">
+                            <div class="form-group">
+                                <label for="sel2">Ward Number:</label>
+                                <select class="selectpicker form-control" id="sel2">
+                                    <option value="">Select Ward No.</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                            <div class="form-group">
+                                <label for="sel3">Colony </label>
+                                <select class="selectpicker form-control" id="sel3">
+                                    <option value="">Select Colony </option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                            <div class="form-group">
+                                <label for="sel3">Street</label>
+                                <select class="selectpicker form-control" id="sel3">
+                                    <option value="">Select Street</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                           <div class="form-group">
+                               <label for="usr">Apartment Name</label>
+                               <input type="text" class="form-control" id="usr" placeholder="Enter Apartment Name" />
+                           </div>
+                       </div>
+                        <div class="col-12 col-sm-12 d-flex justify-content-end mt-3">
+                            <button type="button view" class="btn veiw mr-4"><img src="img/search-icon.svg" class="mr-1" />Search</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--End Search Content -->
+            </div>
+        </div>
+         <!-- End Search content -->
+         <!-- Start Property card content -->
+         <div class="row property-card">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+               <h2>Property Listing</h2>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+               <div class="card">
+                  <div class="card-img">
+                     <img  src="img/img-property.png">
+                     <button class="btn view-more-detail float-right ">View more details</button>
+                  </div>
+                  <div class="card-block ">
+                     <div class="row mb-3">
+                        <div class="col-md-6 col-sm-6 col-lg-6">
+                           <p class="card-title ">Service No.:</p>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-lg-6">
+                           <p class="card-sub-title  text-right">1A8CMD39</p>
+                        </div>
+                     </div>
+                     <div class="row mb-3">
+                        <div class="col-md-6 col-sm-6 col-lg-6">
+                           <p class="card-title ">Owner Name.:</p>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-lg-6">
+                           <p class="card-sub-title text-right">Kapil Varma</p>
+                        </div>
+                     </div>
+                     <div class="row mb-3">
+                        <div class="col-md-6 col-sm-6 col-lg-6">
+                           <p class="card-title ">Plot Area:</p>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-lg-6">
+                           <p class="card-sub-title text-right">1272.51 sq.yd</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-footer">
+                     <p class="card-title mb-2">Address</p>
+                     <p class="footer-title">HNo Roopawaton ka beragugji ka bera Jodhpur</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+               <div class="card">
+                  <div class="card-img">
+                     <img  src="img/img-property2.png">
+                     <button class="btn view-more-detail float-right ">View more details</button>
+                  </div>
+                  <div class="card-block ">
+                     <div class="row mb-3">
+                        <div class="col-md-6 col-sm-6 col-lg-6">
+                           <p class="card-title ">Service No.:</p>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-lg-6">
+                           <p class="card-sub-title  text-right">1A8CMD39</p>
+                        </div>
+                     </div>
+                     <div class="row mb-3">
+                        <div class="col-md-6 col-sm-6 col-lg-6">
+                           <p class="card-title ">Owner Name.:</p>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-lg-6">
+                           <p class="card-sub-title text-right">Kapil Varma</p>
+                        </div>
+                     </div>
+                     <div class="row mb-3">
+                        <div class="col-md-6 col-sm-6 col-lg-6">
+                           <p class="card-title ">Plot Area:</p>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-lg-6">
+                           <p class="card-sub-title text-right">1272.51 sq.yd</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-footer">
+                     <p class="card-title mb-2">Address</p>
+                     <p class="footer-title">HNo Roopawaton ka beragugji ka bera Jodhpur</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+               <div class="card">
+                  <div class="card-img">
+                     <img  src="img/img-property3.png">
+                     <button class="btn view-more-detail float-right ">View more details</button>
+                  </div>
+                  <div class="card-block ">
+                     <div class="row mb-3">
+                        <div class="col-md-6 col-sm-6 col-lg-6">
+                           <p class="card-title ">Service No.:</p>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-lg-6">
+                           <p class="card-sub-title  text-right">1A8CMD39</p>
+                        </div>
+                     </div>
+                     <div class="row mb-3">
+                        <div class="col-md-6 col-sm-6 col-lg-6">
+                           <p class="card-title ">Owner Name.:</p>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-lg-6">
+                           <p class="card-sub-title text-right">Kapil Varma</p>
+                        </div>
+                     </div>
+                     <div class="row mb-3">
+                        <div class="col-md-6">
+                           <p class="card-title ">Plot Area:</p>
+                        </div>
+                        <div class="col-md-6">
+                           <p class="card-sub-title text-right">1272.51 sq.yd</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-footer">
+                     <p class="card-title mb-2">Address</p>
+                     <p class="footer-title">HNo Roopawaton ka beragugji ka bera Jodhpur</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+               <div class="card">
+                  <div class="card-img">
+                     <img  src="img/img-property4.png">
+                     <button class="btn view-more-detail float-right ">View more details</button>
+                  </div>
+                  <div class="card-block ">
+                     <div class="row mb-3">
+                        <div class="col-md-6 col-sm-6 col-lg-6">
+                           <p class="card-title ">Service No.:</p>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-lg-6">
+                           <p class="card-sub-title  text-right">1A8CMD39</p>
+                        </div>
+                     </div>
+                     <div class="row mb-3">
+                        <div class="col-md-6">
+                           <p class="card-title ">Owner Name.:</p>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-lg-6">
+                           <p class="card-sub-title text-right">Kapil Varma</p>
+                        </div>
+                     </div>
+                     <div class="row mb-3">
+                        <div class="col-md-6 col-sm-6 col-lg-6">
+                           <p class="card-title ">Plot Area:</p>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-lg-6">
+                           <p class="card-sub-title text-right">1272.51 sq.yd</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-footer">
+                     <p class="card-title mb-2">Address</p>
+                     <p class="footer-title">HNo Roopawaton ka beragugji ka bera Jodhpur</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+               <div class="card">
+                  <div class="card-img">
+                     <img  src="img/img-property5.png">
+                     <button class="btn view-more-detail float-right ">View more details</button>
+                  </div>
+                  <div class="card-block ">
+                     <div class="row mb-3">
+                        <div class="col-md-6 col-sm-6 col-lg-6">
+                           <p class="card-title ">Service No.:</p>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-lg-6">
+                           <p class="card-sub-title  text-right">1A8CMD39</p>
+                        </div>
+                     </div>
+                     <div class="row mb-3">
+                        <div class="col-md-6 col-sm-6 col-lg-6">
+                           <p class="card-title ">Owner Name.:</p>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-lg-6">
+                           <p class="card-sub-title text-right">Kapil Varma</p>
+                        </div>
+                     </div>
+                     <div class="row mb-3">
+                        <div class="col-md-6 col-sm-6 col-lg-6">
+                           <p class="card-title ">Plot Area:</p>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-lg-6">
+                           <p class="card-sub-title text-right">1272.51 sq.yd</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-footer">
+                     <p class="card-title mb-2">Address</p>
+                     <p class="footer-title">HNo Roopawaton ka beragugji ka bera Jodhpur</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 ">
+               <div class="card">
+                  <div class="card-img">
+                     <img  src="img/img-property6.png">
+                     <button class="btn view-more-detail float-right ">View more details</button>
+                  </div>
+                  <div class="card-block ">
+                     <div class="row mb-3">
+                        <div class="col-md-6">
+                           <p class="card-title ">Service No.:</p>
+                        </div>
+                        <div class="col-md-6">
+                           <p class="card-sub-title  text-right">1A8CMD39</p>
+                        </div>
+                     </div>
+                     <div class="row mb-3">
+                        <div class="col-md-6">
+                           <p class="card-title ">Owner Name.:</p>
+                        </div>
+                        <div class="col-md-6">
+                           <p class="card-sub-title text-right">Kapil Varma</p>
+                        </div>
+                     </div>
+                     <div class="row mb-3">
+                        <div class="col-md-6">
+                           <p class="card-title ">Plot Area:</p>
+                        </div>
+                        <div class="col-md-6">
+                           <p class="card-sub-title text-right">1272.51 sq.yd</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-footer">
+                     <p class="card-title mb-2">Address</p>
+                     <p class="footer-title">HNo Roopawaton ka beragugji ka bera Jodhpur</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 ">
+               <div class="card">
+                  <div class="card-img">
+                     <img  src="img/img-property7.png">
+                     <button class="btn view-more-detail float-right ">View more details</button>
+                  </div>
+                  <div class="card-block ">
+                     <div class="row mb-3">
+                        <div class="col-md-6">
+                           <p class="card-title ">Service No.:</p>
+                        </div>
+                        <div class="col-md-6">
+                           <p class="card-sub-title  text-right">1A8CMD39</p>
+                        </div>
+                     </div>
+                     <div class="row mb-3">
+                        <div class="col-md-6">
+                           <p class="card-title ">Owner Name.:</p>
+                        </div>
+                        <div class="col-md-6">
+                           <p class="card-sub-title text-right">Kapil Varma</p>
+                        </div>
+                     </div>
+                     <div class="row mb-3">
+                        <div class="col-md-6">
+                           <p class="card-title ">Plot Area:</p>
+                        </div>
+                        <div class="col-md-6">
+                           <p class="card-sub-title text-right">1272.51 sq.yd</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-footer">
+                     <p class="card-title mb-2">Address</p>
+                     <p class="footer-title">HNo Roopawaton ka beragugji ka bera Jodhpur</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+               <div class="card">
+                  <div class="card-img">
+                     <img  src="img/img-property8.png">
+                     <button class="btn view-more-detail float-right ">View more details</button>
+                  </div>
+                  <div class="card-block ">
+                     <div class="row mb-3">
+                        <div class="col-md-6">
+                           <p class="card-title ">Service No.:</p>
+                        </div>
+                        <div class="col-md-6">
+                           <p class="card-sub-title  text-right">1A8CMD39</p>
+                        </div>
+                     </div>
+                     <div class="row mb-3">
+                        <div class="col-md-6">
+                           <p class="card-title ">Owner Name.:</p>
+                        </div>
+                        <div class="col-md-6">
+                           <p class="card-sub-title text-right">Kapil Varma</p>
+                        </div>
+                     </div>
+                     <div class="row mb-3">
+                        <div class="col-md-6">
+                           <p class="card-title ">Plot Area:</p>
+                        </div>
+                        <div class="col-md-6">
+                           <p class="card-sub-title text-right">1272.51 sq.yd</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-footer">
+                     <p class="card-title mb-2">Address</p>
+                     <p class="footer-title">HNo Roopawaton ka beragugji ka bera Jodhpur</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+               <div class="card">
+                  <div class="card-img">
+                     <img  src="img/img-property9.png">
+                     <button class="btn view-more-detail float-right ">View more details</button>
+                  </div>
+                  <div class="card-block ">
+                     <div class="row mb-3">
+                        <div class="col-md-6">
+                           <p class="card-title ">Service No.:</p>
+                        </div>
+                        <div class="col-md-6">
+                           <p class="card-sub-title  text-right">1A8CMD39</p>
+                        </div>
+                     </div>
+                     <div class="row mb-3">
+                        <div class="col-md-6">
+                           <p class="card-title ">Owner Name.:</p>
+                        </div>
+                        <div class="col-md-6">
+                           <p class="card-sub-title text-right">Kapil Varma</p>
+                        </div>
+                     </div>
+                     <div class="row mb-3">
+                        <div class="col-md-6">
+                           <p class="card-title ">Plot Area:</p>
+                        </div>
+                        <div class="col-md-6">
+                           <p class="card-sub-title text-right">1272.51 sq.yd</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-footer">
+                     <p class="card-title mb-2">Address</p>
+                     <p class="footer-title">HNo Roopawaton ka beragugji ka bera Jodhpur</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- End Property card content -->
+         <!-- Start pagination -->
+         <div class="row justify-content-center">
+            <ul class="pagination">
+               <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+               <li class="page-item"><a class="page-link" href="#">1</a></li>
+               <li class="page-item"><a class="page-link" href="#">2</a></li>
+               <li class="page-item"><a class="page-link" href="#">3</a></li>
+               <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+         </div>
+         <!-- Start pagination -->
+         <!--End Search Content -->
+      </div>
+   </body>
+</html>

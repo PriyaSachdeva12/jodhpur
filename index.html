@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Jodhpur</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- CDN link used below is compatible with this example -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+        <!-- CDN link used below Font Family Poppins -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="scss/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    </head>
+    <body>
+        <div class="banner" style="background-image: url(img/banner.jpg);">
+            <div class="container">
+                <div class="sub-baneer">
+                    <div class="row">
+                        <div class="col-md-3 card mr-2">
+                            <div class="row py-2">
+                                <div class="col-md-5"><img src="img/cm-1.png" /></div>
+                                <div class="col-md-7">
+                                    <p>Hon'ble Chief Minister of Rajasthan</p>
+                                    <p class="name">Sh. Ashok Gehlot</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 card">
+                            <div class="row py-2">
+                                <div class="col-md-5"><img src="img/cm.png" /></div>
+                                <div class="col-md-7">
+                                    <p>Hon'ble Chief Minister of Rajasthan</p>
+                                    <p><strong>Sh. Ashok Gehlot</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-area">
+                        <div class="container">
+                            <div class="search-content">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 col-lg-12">
+                                        <h3>Search Property</h3>
+                                    </div>
+                                    <div class="col col-md-3">
+                                       <div class="form-group">
+                                           <label for="sel1">Select Tax Type<span>*</span></label>
+                                           <select class="selectpicker form-control" id="sel1" placeholder="">
+                                               <option value="">Select Tax Type</option>
+                                               <option>1</option>
+                                               <option>2</option>
+                                               <option>3</option>7
+                                               <option>4</option>
+                                           </select>
+                                       </div>
+                                   </div>
+                                    <div class="col col-md-3">
+                                        <div class="form-group">
+                                            <label for="Property">UID/Service No.<span>*</span></label>
+                                            <input type="text" class="form-control" id="Property" placeholder="1A9CMD40" />
+                                        </div>
+                                    </div>
+                                    <div class="col col-md-3">
+                                        <div class="form-group">
+                                            <label for="usr">HAccount Holder’s Name</label>
+                                            <input type="text" class="form-control" id="usr" placeholder="Enter Account Holder’s Name " />
+                                        </div>
+                                    </div>
+                                    <div class="col col-md-3">
+                                        <div class="form-group">
+                                            <label for="usr">Address</label>
+                                            <input type="text" class="form-control" id="usr" placeholder="Enter Address" />
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="col col-md-3">
+                                        <div class="form-group">
+                                            <label for="sel2">Ward Number:</label>
+                                            <select class="selectpicker form-control" id="sel2">
+                                                <option value="">Select Ward No.</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col col-md-3">
+                                        <div class="form-group">
+                                            <label for="sel3">Colony </label>
+                                            <select class="selectpicker form-control" id="sel3">
+                                                <option value="">Select Colony </option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col col-md-3">
+                                        <div class="form-group">
+                                            <label for="sel3">Street</label>
+                                            <select class="selectpicker form-control" id="sel3">
+                                                <option value="">Select Street</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col col-md-3">
+                                       <div class="form-group">
+                                           <label for="usr">Apartment Name</label>
+                                           <input type="text" class="form-control" id="usr" placeholder="Enter Apartment Name" />
+                                       </div>
+                                   </div>
+                                    <div class="col-12 col-sm-12 d-flex justify-content-end mt-3">
+                                        <button type="button view" class="btn veiw mr-4"><img src="img/search-icon.svg" class="mr-1" />Search</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--End Search Content -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Start Search content -->
+
+                <!-- End Search content -->
+            </div>
+        </div>
+        <div class="how_it">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="text-center">How it works.</h2>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                            it to make a type specimen book.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="d-flex">
+                                <div class="number">01</div>
+                                <div><img src="img/enter_service.png" class="img-circle" /></div>
+                                <div>
+                                    <h4>Enter Service No/UID No. Login/Register</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="d-flex">
+                                <div class="number">02</div>
+                                <div><img src="img/serach_property.png" class="img-circle" /></div>
+                                <div>
+                                    <h4>Enter Service No/UID No. Login/Register</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="d-flex">
+                                <div class="number">03</div>
+                                <div><img src="img/card_1.png" class="img-circle" /></div>
+                                <div>
+                                    <h4>Enter Service No/UID No. Login/Register</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="d-flex">
+                                <div class="number">04</div>
+                                <div><img src="img/check_property.png" class="img-circle" /></div>
+                                <div>
+                                    <h4>Enter Service No/UID No. Login/Register</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="d-flex">
+                                <div class="number">05</div>
+                                <div><img src="img/pay.png" class="img-circle" /></div>
+                                <div>
+                                    <h4>Enter Service No/UID No. Login/Register</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="d-flex">
+                                <div class="number">06</div>
+                                <div><img src="img/receipt.png" class="img-circle" /></div>
+                                <div>
+                                    <h4>Enter Service No/UID No. Login/Register</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="services" style="background-image: url(img/service.png);">
+            <div class="row">
+                <div class="col-md-8">
+                    <p>Go Online with Mobile App</p>
+                    <h4>Use Our Services From Anywhere</h4>
+                    <div class="d-flex">
+                        <button class="btn btn-dark app-button mb-3 d-flex flex-row mr-3">
+                            <img src="img/google.png" />
+                            <div class="d-flex flex-column">
+                                <span>GET IT ON</span>
+                                <h5 class="mb-0">Google Play</h5>
+                            </div>
+                        </button>
+                        <button class="btn btn-dark app-button mb-3 d-flex flex-row">
+                            <i class="fa fa-apple"></i>
+                            <div class="d-flex flex-column">
+                                <span>Download on the </span>
+                                <h5 class="mb-0">App Store</h5>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex">
+                        <img src="img/iphone_saml.png" class="iphone-small" />
+                        <img src="img/iphone.png" class="iphone" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="vector" style="background-image: url(img/vector.png);"></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="faq">Faqs</h1>
+                    <!-- Contenedor -->
+                    <ul id="accordion" class="accordion">
+                        <li>
+                            <div class="link">Lorem Ipsum is simply dummy text of the printing and typesetting industry<i class="fa fa-chevron-down"></i></div>
+                            <ul class="submenu">
+                                <li><a href="#">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="link">Lorem Ipsum is simply dummy text of the printing and typesetting industry<i class="fa fa-chevron-down"></i></div>
+                            <ul class="submenu">
+                                <li><a href="#">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="link">Lorem Ipsum is simply dummy text of the printing and typesetting industry<i class="fa fa-chevron-down"></i></div>
+                            <ul class="submenu">
+                                <li><a href="#">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="link">Lorem Ipsum is simply dummy text of the printing and typesetting industry<i class="fa fa-chevron-down"></i></div>
+                            <ul class="submenu">
+                                <li><a href="#">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="link">Lorem Ipsum is simply dummy text of the printing and typesetting industry<i class="fa fa-chevron-down"></i></div>
+                            <ul class="submenu">
+                                <li><a href="#">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(function () {
+                var Accordion = function (el, multiple) {
+                    this.el = el || {};
+                    this.multiple = multiple || false;
+
+                    // Variables privadas
+                    var links = this.el.find(".link");
+                    // Evento
+                    links.on("click", { el: this.el, multiple: this.multiple }, this.dropdown);
+                };
+
+                Accordion.prototype.dropdown = function (e) {
+                    var $el = e.data.el;
+                    ($this = $(this)), ($next = $this.next());
+
+                    $next.slideToggle();
+                    $this.parent().toggleClass("open");
+
+                    if (!e.data.multiple) {
+                        $el.find(".submenu").not($next).slideUp().parent().removeClass("open");
+                    }
+                };
+
+                var accordion = new Accordion($("#accordion"), false);
+            });
+        </script>
+    </body>
+</html>
