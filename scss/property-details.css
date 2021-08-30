@@ -11,6 +11,35 @@
   padding: 22px 32px 24px;
 }
 
+.alltable span {
+  padding-left: 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.alltable p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 0;
+}
+
+.alltable .red {
+  color: red;
+}
+
+.alltable .green {
+  color: green;
+}
+
+.alltable .subtotal {
+  border-bottom: 1px solid #EFEFEF !important;
+  padding-bottom: 10px;
+}
+
 #property-table td {
   padding: 24px;
   font-weight: normal;
@@ -203,5 +232,39 @@ button.owl-dot:active {
 
 .mr-30 {
   padding-right: 32px;
+}
+
+.particlar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #F6F6F6;
+}
+
+.particlar tr, .particlar td {
+  background-color: #fff;
+}
+
+.backgrd {
+  background: #F6F6F6;
+}
+
+.pay-now {
+  background: #5e2eba;
+  border-radius: 5px;
+  padding: 11px 16px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.border-tr {
+  border-left: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
+}
+
+.border-tr:last-child {
+  border-bottom: 1px solid #dee2e6;
 }
 /*# sourceMappingURL=property-details.css.map */

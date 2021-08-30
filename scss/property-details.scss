@@ -11,6 +11,31 @@
 	td {
 		padding: 22px 32px 24px;
 	}
+	span{
+		padding-left: 20px;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 25px;
+	}
+	p{
+		
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 25px;
+		margin-bottom: 0;
+	}
+	.red{
+		color: red;
+	}
+	.green{
+		color: green;
+	}
+	.subtotal{
+		border-bottom: 1px solid #EFEFEF !important;
+		padding-bottom: 10px;
+	}
 }
 #property-table {
 	td {
@@ -190,3 +215,31 @@ button.owl-dot {
 	padding-right: 32px;
 }
 
+.particlar{
+	display: flex;
+	background: #F6F6F6;
+	
+	tr,td{
+		background-color: #fff;
+	}
+	
+}
+.backgrd{
+	background: #F6F6F6;
+}
+.pay-now {
+	background: #5e2eba;
+	border-radius: 5px;
+	padding: 11px 16px;
+	color: #fff;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 25px;
+}
+.border-tr{
+	border-left: 1px solid #dee2e6;
+	border-right: 1px solid #dee2e6;
+&:last-child{
+	border-bottom: 1px solid #dee2e6;
+}	
+}
