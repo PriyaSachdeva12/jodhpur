@@ -1,0 +1,128 @@
+.alltable th {
+  background: #fbfbfb !important;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 30px;
+  padding: 21px 33px 17px;
+  color: #3d3d3d;
+}
+
+.alltable td {
+  padding: 22px 32px 24px;
+}
+
+.alltable tr {
+  border-left: 1px solid #efefef !important;
+  border-right: 1px solid #efefef !important;
+}
+
+.alltable tr:last-child {
+  border-bottom: 1px solid #efefef !important;
+}
+
+.alltable span {
+  padding-left: 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.alltable p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 0;
+}
+
+.alltable .red {
+  color: red;
+}
+
+.alltable .green {
+  color: green;
+}
+
+.alltable .subtotal {
+  border-bottom: 1px solid #efefef !important;
+  padding-bottom: 10px;
+}
+
+#property-table td {
+  padding: 24px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3d3d3d;
+}
+
+#property-table td:nth-child(2n + 1) {
+  padding: 22px 32px;
+  background: #fbfbfb !important;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #3d3d3d;
+}
+
+#property-table th:nth-child(2n + 1) {
+  padding: 22px 32px;
+  background: #fbfbfb !important;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #3d3d3d;
+}
+
+th {
+  padding: 24px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3d3d3d;
+}
+
+table {
+  padding: 5px;
+}
+
+table tr td label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  color: #040b16;
+  margin-top: 27px;
+  margin-left: 10px;
+}
+
+table tr td label span {
+  font-weight: normal;
+  font-size: 14px !important;
+  line-height: 140%;
+  color: #7c8188;
+  padding-left: 0 !important;
+}
+
+.veiw {
+  background: #5e2eba;
+  border-radius: 5px;
+  padding: 11px 16px !important;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  height: 50px;
+}
+
+.address th {
+  background-color: white !important;
+  border-bottom: 0 solid #fff;
+}
+
+.tax tr td {
+  border: 0 solid #fff;
+  border-bottom: 1px solid #efefef !important;
+}
+/*# sourceMappingURL=payment.css.map */
