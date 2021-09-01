@@ -1,0 +1,118 @@
+.alltable th {
+  background: #FBFBFB !important;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 30px;
+  padding: 21px 33px 17px;
+  color: #3D3D3D;
+}
+
+.alltable td {
+  padding: 22px 32px 24px;
+}
+
+table {
+  padding: 5px;
+}
+
+table th {
+  padding: 24px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3D3D3D;
+}
+
+.view-table {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  background: #FFFFFF;
+  border: 1px solid #CDCDCD;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  padding: 11px 14px;
+  color: #394A64;
+}
+
+table#transaction th {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #3D3D3D;
+  padding: 24px 27px 22px;
+}
+
+table#transaction td {
+  padding: 26px 31px 20px;
+  line-height: 33px;
+}
+
+table#transaction td:nth-child(2) {
+  line-height: 22.4px;
+}
+
+table#transaction td:nth-child(5) {
+  font-size: 18px;
+  line-height: 22.4px;
+}
+
+.view-table {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  background: #FFFFFF;
+  border: 1px solid #CDCDCD;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  padding: 11px 14px;
+  color: #394A64;
+}
+
+.mr-30 {
+  padding-right: 32px;
+}
+
+.pr-30 {
+  margin-right: 10px;
+}
+
+.transtable td {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 33px;
+  color: #3D3D3D;
+}
+
+table#notifications th {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #3D3D3D;
+}
+
+table#notifications td {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 31px;
+  color: #3D3D3D;
+}
+
+.red {
+  color: #FF0000 !important;
+}
+
+.primary-main {
+  color: #4D20A3 !important;
+}
+
+.green {
+  color: #24B400 !important;
+}
+
+.warning {
+  color: #F2A818 !important;
+}
+/*# sourceMappingURL=notifications.css.map */

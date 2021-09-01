@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Jodhpur</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <!-- CDN link used below Font Family Poppins -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="scss/notifications.css">
+   </head>
+   <body>
+      <div class="container" >
+         <!--Start Table Section-->
+         <div class="row">
+            <div class=" col-sm-12 col-md-12 col-lg-12 table-area table-responsive">
+               <h2 class="mt-4">Transactions History</h2>
+               <table class="table table-bordered  owertable" id="transaction">
+                  <thead>
+                     <tr>
+                        <th>S.No.</th>
+                        <th>Transaction ID</th>
+                        <th>Date and Time</th>
+                        <th>Amount</th>
+                        <th>Transaction Status</th>
+                        <th > Actions</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>1</td>
+                        <td class="primary-main font-weight-600">23456789</td>
+                        <td>10 March 2015, 10:30 AM</td>
+                        <td class="primary-main font-weight-600">4797</td>
+                        <td class="green font-weight-500">Successfull</td>
+                        <td><button class="view-table pr-30"><img src="img/view.svg" class="pr-1 mr-30`
+                           "/>View</button>
+                           <button class="view-table"><img src="img/download.svg" class="pr-1"/>Download</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>2</td>
+                        <td class="primary-main font-weight-600">23456789</td>
+                        <td>10 April 2017, 2:50 PM</td>
+                        <td class="primary-main font-weight-600">2000</td>
+                        <td class="red font-weight-500">Failed</td>
+                        <td><button class="view-table pr-30"><img src="img/view.svg" class="pr-1 mr-30"/>View</button>
+                           <button class="view-table"><img src="img/download.svg" class="pr-1" />Download</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>3</td>
+                        <td class="primary-main font-weight-600">23456789</td>
+                        <td>10 March 2019, 10:24 AM</td>
+                        <td class="primary-main font-weight-600">3000</td>
+                        <td class="green font-weight-500">Successfull</td>
+                        <td><button class="view-table pr-30"><img src="img/view.svg" class="pr-1"/>View</button>
+                           <button class="view-table"><img src="img/download.svg" />Download</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>4</td>
+                        <td class="primary-main font-weight-600">23456789</td>
+                        <td>10 Match 2021, 3:30 PM</td>
+                        <td class="primary-main font-weight-600">12000</td>
+                        <td class="warning font-weight-500">Pending</td>
+                        <td><button class="view-table pr-30"><img src="img/view.svg" class="pr-1"/>View</button>
+                           <button class="view-table"><img src="img/download.svg" class="pr-1"/>Download</button>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+         <!--End Table Section-->
+      </div>
+   </body>
+</html>
