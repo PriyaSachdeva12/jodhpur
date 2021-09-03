@@ -107,3 +107,24 @@ h4{
 		line-height: 31px;
 	}
 }
+.modal-dialog{
+    margin-top: 60px;
+    .modal-content{
+        h2{
+     padding-top: 70px;
+        }
+      form{
+          margin-right: 50px;
+      }
+       
+    }
+}
+.veiw {
+	background: #5e2eba;
+	border-radius: 5px;
+	padding: 11px 16px;
+	color: #fff;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 25px;
+}
