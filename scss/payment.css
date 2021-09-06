@@ -125,4 +125,12 @@ table tr td label span {
   border: 0 solid #fff;
   border-bottom: 1px solid #efefef !important;
 }
+
+.login-table tr td .form-group label {
+  margin-top: 0;
+}
+
+.login-table tr td .form-group input {
+  margin-bottom: 0;
+}
 /*# sourceMappingURL=payment.css.map */

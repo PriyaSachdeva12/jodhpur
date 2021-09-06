@@ -39,6 +39,7 @@ table {
 	border-radius: 5px;
 	padding: 11px 14px;
 	color: #394A64;
+	height: 50px;
 }
 
 table#transaction {
@@ -127,4 +128,26 @@ h4{
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 25px;
+}
+.send{
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 140%;
+	background: #FFFFFF;
+	border: 1px solid #CDCDCD;
+	box-sizing: border-box;
+	border-radius: 5px;
+	padding: 11px 14px;
+	color: #394A64;
+	height: 50px;
+	margin-right: 10px;
+}
+.bd-example-modal-lg2{
+	.modal-dialog{
+		.modal-content{
+			padding: 0px 10px 40px 40px !important;
+		}
+	
+	}
+
 }
