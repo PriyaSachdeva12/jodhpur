@@ -1,6 +1,9 @@
+/* Color*/
+/* Font-weight*/
+/*border*/
 .alltable th {
   background: #FBFBFB !important;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 22px;
   line-height: 30px;
   padding: 21px 33px 17px;
@@ -14,14 +17,14 @@
 .alltable span {
   padding-left: 20px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 18px;
   line-height: 25px;
 }
 
 .alltable p {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 25px;
   margin-bottom: 0;
@@ -40,9 +43,16 @@
   padding-bottom: 10px;
 }
 
+.table-responsive {
+  display: inline-table;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 #property-table td {
   padding: 24px;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #3D3D3D;
@@ -51,7 +61,7 @@
 #property-table td:nth-child(2n+1) {
   padding: 22px 32px;
   background: #FBFBFB !important;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 18px;
   line-height: 25px;
   color: #3D3D3D;
@@ -60,22 +70,22 @@
 #property-table th:nth-child(2n+1) {
   padding: 22px 32px;
   background: #FBFBFB !important;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 18px;
   line-height: 25px;
   color: #3D3D3D;
 }
 
 th {
-  padding: 24px;
-  font-weight: normal;
+  padding: 22px 24px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #3D3D3D;
 }
 
 table {
-  padding: 5px;
+  padding: 4px;
 }
 
 button.owl-prev {
@@ -167,6 +177,12 @@ button.owl-dot:active {
   margin-top: 4px;
 }
 
+.total-due .subtotal {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .price {
   font-weight: 600;
   font-size: 25px;
@@ -184,7 +200,7 @@ button.owl-dot:active {
 }
 
 .owertable td {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #3D3D3D;
@@ -215,19 +231,6 @@ button.owl-dot:active {
 
 .mb-36 {
   margin-bottom: 36px;
-}
-
-.view-table {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 140%;
-  background: #FFFFFF;
-  border: 1px solid #CDCDCD;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 5px;
-  padding: 11px 14px;
-  color: #394A64;
 }
 
 .mr-30 {
@@ -266,5 +269,115 @@ button.owl-dot:active {
 
 .border-tr:last-child {
   border-bottom: 1px solid #dee2e6;
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-weight: 600;
+    font-size: 22px !important;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    color: #3D3D3D;
+  }
+  .h2 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    color: #3D3D3D;
+  }
+  #carrer {
+    margin-bottom: 20px;
+  }
+  .map-section {
+    height: 228px;
+  }
+  .total-due {
+    margin-bottom: 25px;
+  }
+  .total-due p:first-child {
+    margin-top: 4px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .total-due h2 {
+    margin-bottom: 15px;
+  }
+  .total-due .subtotal {
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+  }
+  .pay-now {
+    font-size: 14px;
+    line-height: 22px;
+    padding: 8px 15px;
+  }
+  .total-due .subtotal {
+    margin-top: 20px;
+    -webkit-box-pack: unset !important;
+        -ms-flex-pack: unset !important;
+            justify-content: unset !important;
+  }
+  #property-table td {
+    padding: 20px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  #property-table td:nth-child(2n+1) {
+    padding: 20px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  #property-table th:nth-child(2n+1) {
+    padding: 20px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  th {
+    padding: 20px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .alltable th {
+    background: #FBFBFB !important;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 20px;
+    color: #3D3D3D;
+  }
+  .alltable td {
+    padding: 20px;
+  }
+  .owertable td {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #3D3D3D;
+  }
+  .p-large {
+    font-size: 14px;
+  }
+  table#transaction th {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #3D3D3D;
+    padding: 24px 27px 22px;
+    padding: 20px;
+  }
+  table#transaction td {
+    padding: 20px;
+    line-height: 18px;
+  }
+  table#transaction td:nth-child(5) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .pr-30 {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
 /*# sourceMappingURL=property-details.css.map */

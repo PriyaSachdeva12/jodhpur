@@ -1,12 +1,17 @@
+@import "./style-format.scss";
+@mixin theme($theme: DarkGray) {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.16);
+	padding: 5px !important;
+  }
 
 .alltable {
 	th {
-		background: #FBFBFB !important;
-		font-weight: bold;
+		background:$lightgrey !important;
+		font-weight: $bold;
 		font-size: 22px;
 		line-height: 30px;
 		padding: 21px 33px 17px;
-		color: #3D3D3D;
+		color: $darkgrey;
 	}
 	td {
 		padding: 22px 32px 24px;
@@ -14,72 +19,78 @@
 	span{
 		padding-left: 20px;
 		font-style: normal;
-		font-weight: bold;
+		font-weight: $bold;
 		font-size: 18px;
 		line-height: 25px;
 	}
 	p{
 		
 		font-style: normal;
-		font-weight: normal;
+		font-weight: $normal;
 		font-size: 18px;
 		line-height: 25px;
 		margin-bottom: 0;
 	}
 	.red{
-		color: red;
+		color: $red;
 	}
 	.green{
-		color: green;
+		color:$green;
 	}
 	.subtotal{
-		border-bottom: 1px solid #EFEFEF !important;
+		border-bottom: 1px solid $lightgray !important;
 		padding-bottom: 10px;
 	}
+}
+.table-responsive {
+    display: inline-table;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 #property-table {
 	td {
 		&:nth-child(2n+1) {
 			padding: 22px 32px;
-			background: #FBFBFB !important;
-			font-weight: bold;
+			background:  $lightgrey !important;
+			font-weight: $bold;
 			font-size: 18px;
 			line-height: 25px;
-			color: #3D3D3D;
+			color: $darkgrey;
 		}
 		padding: 24px;
-		font-weight: normal;
+		font-weight: $normal;
 		font-size: 16px;
 		line-height: 22px;
-		color: #3D3D3D;
+		color: $darkgrey;
 	}
 	th {
 		&:nth-child(2n+1) {
 			padding: 22px 32px;
-			background: #FBFBFB !important;
-			font-weight: bold;
+			background: $lightgrey !important;
+			font-weight: $bold;
 			font-size: 18px;
 			line-height: 25px;
-			color: #3D3D3D;
+			color: $darkgrey;
 		}
 	}
 }
 th {
-	padding: 24px;
-	font-weight: normal;
+	padding: 22px 24px;
+	font-weight: $normal;
 	font-size: 16px;
 	line-height: 22px;
-	color: #3D3D3D;
+	color: $darkgrey;
 }
 table {
-	padding: 5px;
+	padding: 4px;
 }
 
 button.owl-prev {
 	position: absolute;
 	top: 100px;
 	left: 11px;
-	background: #fff !important;
+	background: $White !important;
 	padding: 5px !important;
 	border-radius: 50%;
 }
@@ -87,7 +98,7 @@ button.owl-next {
 	position: absolute;
 	top: 100px;
 	right: 0px;
-	background: #fff !important;
+	background: $White !important;
 	padding: 5px !important;
 	border-radius: 50%;
 }
@@ -97,12 +108,10 @@ button.owl-next {
 	}
 	.owl-nav {
 		button.owl-next {
-			box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.16);
-			padding: 5px !important;
+			@include theme;
 		}
 		button.owl-prev {
-			box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.16);
-			padding: 5px !important;
+			@include theme;
 		}
 	}
 }
@@ -120,10 +129,10 @@ button.owl-dot {
 	height: 5px;
 	margin: 4px;
 	&:hover {
-		background: #F2A818;
+		background: $yellow;
 	}
 	&:active {
-		background: #F2A818;
+		background: $yellow;
 	}
 }
 .owl-dots {
@@ -152,13 +161,16 @@ button.owl-dot {
 	h2 {
 		margin-top: 4px;
 	}
+	.subtotal{
+		justify-content: flex-end;
+	}
 }
 .price {
 	font-weight: 600;
 	font-size: 25px;
 	line-height: 37px;
 	margin: 4px 9px 0 19px;
-	color: #3D3D3D;
+	color: $darkgrey;
 }
 .table-area {
 	table {
@@ -170,10 +182,10 @@ button.owl-dot {
 }
 .owertable {
 	td {
-		font-weight: normal;
+		font-weight: $normal;
 		font-size: 16px;
 		line-height: 22px;
-		color: #3D3D3D;
+		color: $darkgrey;
 	}
 }
 .map-section {
@@ -199,47 +211,162 @@ button.owl-dot {
 .mb-36 {
 	margin-bottom: 36px;
 }
-
-.view-table {
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 140%;
-	background: #FFFFFF;
-	border: 1px solid #CDCDCD;
-	box-sizing: border-box;
-	border-radius: 5px;
-	padding: 11px 14px;
-	color: #394A64;
-}
 .mr-30 {
 	padding-right: 32px;
 }
 
 .particlar{
 	display: flex;
-	background: #F6F6F6;
+	background: $lightwhite;
 	
 	tr,td{
-		background-color: #fff;
+		background-color: $White;
 	}
 	
 }
 .backgrd{
-	background: #F6F6F6;
+	background: $lightwhite;
 }
 .pay-now {
-	background: #5e2eba;
+	background: $purple;
 	border-radius: 5px;
 	padding: 11px 16px;
-	color: #fff;
-	font-weight: 500;
+	color: $White;
+	font-weight: $medium-weight;
 	font-size: 18px;
 	line-height: 25px;
 }
 .border-tr{
-	border-left: 1px solid #dee2e6;
-	border-right: 1px solid #dee2e6;
+	border-left: $border-btm;
+	border-right: $border-btm;
 &:last-child{
-	border-bottom: 1px solid #dee2e6;
+	border-bottom: $border-btm;
 }	
+}
+
+@media screen and (max-width: 768px) {
+
+	h2 {
+		font-weight: 600;
+		font-size: 22px !important;
+		line-height: 100%;
+		letter-spacing: -0.01em;
+		color: $darkgrey;
+	}
+	.h2 {
+		font-weight: 600;
+		font-size: 22px;
+		line-height: 100%;
+		letter-spacing: -0.01em;
+		color: $darkgrey;
+	}
+	#carrer {
+		margin-bottom: 20px;
+	}
+	.map-section {
+		height: 228px;
+	}
+
+	.total-due {
+		p {
+			&:first-child {
+				margin-top: 4px;
+				font-size: 16px;
+				line-height: 22px;
+			}
+		}
+		margin-bottom: 25px;
+		h2 {
+			margin-bottom: 15px;
+		}
+		.subtotal{
+			justify-content: space-between !important;
+		}
+	}
+	.pay-now {
+		font-size: 14px;
+		line-height: 22px;
+		padding: 8px 15px;
+	}
+	.total-due{
+		.subtotal{
+			margin-top: 20px;
+			justify-content: unset !important;
+		}
+	}
+	#property-table {
+		td {
+			&:nth-child(2n+1) {
+				padding: 20px;
+				font-size: 16px;
+				line-height: 18px;
+			}
+			padding: 20px;
+			font-size: 16px;
+			line-height: 18px;
+		}
+		th {
+			&:nth-child(2n+1) {
+				padding: 20px;
+				font-size: 16px;
+				line-height: 18px;
+			}
+		}
+	}
+	th {
+		padding: 20px;
+		font-size: 16px;
+		line-height: 18px;
+	}
+	.alltable {
+		th {
+			background: $lightgrey !important;
+			font-weight: $bold;
+			font-size: 16px;
+			line-height: 18px;
+			padding: 20px;
+			color: $darkgrey;
+		}
+		td {
+			padding: 20px;
+		}
+	}
+	.owertable {
+		td {
+			font-weight: $normal;
+			font-size: 14px;
+			line-height: 18px;
+			color: $darkgrey;
+		}
+	}
+
+
+	
+	
+	.p-large {
+		font-size: 14px;
+	}
+	table#transaction {
+		th {
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 18px;
+			color: $darkgrey;
+			padding: 24px 27px 22px;
+			padding: 20px;
+		}
+		td {
+			padding: 20px;
+			line-height: 18px;
+			&:nth-child(5) {
+				font-size: 14px;
+				line-height: 18px;
+			}
+		}
+	}
+
+	.pr-30 {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
 }
