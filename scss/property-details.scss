@@ -4,7 +4,9 @@
 	padding: 5px !important;
   }
 
-.alltable {
+/* Table  Styles */
+
+  .alltable {
 	th {
 		background:$lightgrey !important;
 		font-weight: $bold;
@@ -48,6 +50,7 @@
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
 }
+/* Table property Styles */
 #property-table {
 	td {
 		&:nth-child(2n+1) {
@@ -85,7 +88,7 @@ th {
 table {
 	padding: 4px;
 }
-
+/* Carousel  Styles */
 button.owl-prev {
 	position: absolute;
 	top: 100px;
@@ -141,13 +144,9 @@ button.owl-dot {
 	align-items: center;
 	margin-top: 29px;
 }
+/* Total due Styles */
 
-.stretch-card {
-	>.card {
-		width: 100%;
-		min-width: 100%;
-	}
-}
+
 .total-due {
 	margin-bottom: 42px;
 	margin-top: 42px;
@@ -172,6 +171,7 @@ button.owl-dot {
 	margin: 4px 9px 0 19px;
 	color: $darkgrey;
 }
+/* Table Styles */
 .table-area {
 	table {
 		margin-bottom: 41px;
@@ -188,6 +188,8 @@ button.owl-dot {
 		color: $darkgrey;
 	}
 }
+/* Map Styles */
+
 .map-section {
 	height: 294px;
 	padding: 10px 9px;
@@ -195,7 +197,7 @@ button.owl-dot {
 .mb-32 {
 	margin-bottom: 32px;
 }
-
+/* Form Total Styles */
 .form-total {
 	margin-right: 13px;
 	margin-top: 5px;
@@ -214,6 +216,7 @@ button.owl-dot {
 .mr-30 {
 	padding-right: 32px;
 }
+/* Particular Styles */
 
 .particlar{
 	display: flex;
@@ -244,129 +247,3 @@ button.owl-dot {
 }	
 }
 
-@media screen and (max-width: 768px) {
-
-	h2 {
-		font-weight: 600;
-		font-size: 22px !important;
-		line-height: 100%;
-		letter-spacing: -0.01em;
-		color: $darkgrey;
-	}
-	.h2 {
-		font-weight: 600;
-		font-size: 22px;
-		line-height: 100%;
-		letter-spacing: -0.01em;
-		color: $darkgrey;
-	}
-	#carrer {
-		margin-bottom: 20px;
-	}
-	.map-section {
-		height: 228px;
-	}
-
-	.total-due {
-		p {
-			&:first-child {
-				margin-top: 4px;
-				font-size: 16px;
-				line-height: 22px;
-			}
-		}
-		margin-bottom: 25px;
-		h2 {
-			margin-bottom: 15px;
-		}
-		.subtotal{
-			justify-content: space-between !important;
-		}
-	}
-	.pay-now {
-		font-size: 14px;
-		line-height: 22px;
-		padding: 8px 15px;
-	}
-	.total-due{
-		.subtotal{
-			margin-top: 20px;
-			justify-content: unset !important;
-		}
-	}
-	#property-table {
-		td {
-			&:nth-child(2n+1) {
-				padding: 20px;
-				font-size: 16px;
-				line-height: 18px;
-			}
-			padding: 20px;
-			font-size: 16px;
-			line-height: 18px;
-		}
-		th {
-			&:nth-child(2n+1) {
-				padding: 20px;
-				font-size: 16px;
-				line-height: 18px;
-			}
-		}
-	}
-	th {
-		padding: 20px;
-		font-size: 16px;
-		line-height: 18px;
-	}
-	.alltable {
-		th {
-			background: $lightgrey !important;
-			font-weight: $bold;
-			font-size: 16px;
-			line-height: 18px;
-			padding: 20px;
-			color: $darkgrey;
-		}
-		td {
-			padding: 20px;
-		}
-	}
-	.owertable {
-		td {
-			font-weight: $normal;
-			font-size: 14px;
-			line-height: 18px;
-			color: $darkgrey;
-		}
-	}
-
-
-	
-	
-	.p-large {
-		font-size: 14px;
-	}
-	table#transaction {
-		th {
-			font-weight: 600;
-			font-size: 14px;
-			line-height: 18px;
-			color: $darkgrey;
-			padding: 24px 27px 22px;
-			padding: 20px;
-		}
-		td {
-			padding: 20px;
-			line-height: 18px;
-			&:nth-child(5) {
-				font-size: 14px;
-				line-height: 18px;
-			}
-		}
-	}
-
-	.pr-30 {
-		margin-right: 0;
-		margin-bottom: 10px;
-	}
-}

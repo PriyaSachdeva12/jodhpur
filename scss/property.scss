@@ -5,7 +5,7 @@ body {
 	height: 100%;
 	font-weight: 400;
 }
-
+/* Button it*/
 .veiw {
 	background: #5e2eba;
 	border-radius: 5px;
@@ -65,6 +65,7 @@ body {
 		}
 	}
 }
+/*Drop Down Styles*/
 .show {
 	> .btn-light.dropdown-toggle {
 		background: #fff;
@@ -182,6 +183,7 @@ body {
 		line-height: 45px;
 	}
 }
+/* How it*/
 .how_it {
 	margin-top: 250px;
 	margin-bottom: 130px;
@@ -338,4 +340,9 @@ ul.pagination {
         }
 	}
 }
-
+@media screen and (max-width: 768px){
+.col.col-md-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+}

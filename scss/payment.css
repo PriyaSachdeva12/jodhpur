@@ -133,4 +133,117 @@ table tr td label span {
 .login-table tr td .form-group input {
   margin-bottom: 0;
 }
+
+@media screen and (max-width: 768px) {
+  .search-content p {
+    font-size: 12px;
+    line-height: 24px;
+    text-align: left;
+  }
+  .search-content .col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: auto;
+    -ms-flex-positive: 1;
+    -webkit-box-flex: inherit;
+            flex-grow: inherit;
+  }
+  .search-content .veiw {
+    background: #5E2EBA;
+    border-radius: 5px;
+    padding: 11px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 25px;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    color: #3D3D3D;
+  }
+  .h2 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    color: #3D3D3D;
+  }
+  .total-due {
+    margin-bottom: 25px;
+  }
+  .total-due p:first-child {
+    margin-top: 4px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .total-due h2 {
+    margin-bottom: 15px;
+  }
+  .total-due .justify-content-end {
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+  }
+  .pay-now {
+    font-size: 14px;
+    line-height: 22px;
+    padding: 8px 15px;
+  }
+  th {
+    padding: 20px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .alltable th {
+    background: #FBFBFB !important;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 20px;
+    color: #3D3D3D;
+  }
+  .alltable td {
+    padding: 20px;
+  }
+  .owertable td {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #3D3D3D;
+  }
+  .mb-36 {
+    margin-bottom: 35px;
+  }
+  .p-large {
+    font-size: 14px;
+  }
+  table#transaction th {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #3D3D3D;
+    padding: 24px 27px 22px;
+    padding: 20px;
+  }
+  table#transaction td {
+    padding: 20px;
+    line-height: 18px;
+  }
+  table#transaction td:nth-child(5) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .view-table {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .pr-30 {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
 /*# sourceMappingURL=payment.css.map */
