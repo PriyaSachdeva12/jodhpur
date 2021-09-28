@@ -5,7 +5,10 @@
   }
 
 /* Table  Styles */
-
+h2{
+	font-size: 24px !important;
+    margin-bottom: 20px;
+}
   .alltable {
 	th {
 		background:$lightgrey !important;
@@ -247,3 +250,403 @@ button.owl-dot {
 }	
 }
 
+@import "../../../../scss/_variables";
+
+/*Total Section*/
+.total-section {
+    display        : flex;
+    flex-wrap      : nowrap;
+    justify-content: space-between;
+}
+
+.tax-notes {
+    width      : 60%;
+    padding-top: 20px;
+
+    h6 {
+        font-size    : 16px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        line-height: 27px;
+        color      : #767676;
+        font-size  : 13px;
+    }
+}
+
+
+.total-table {
+    width          : 30%;
+    display        : flex;
+    justify-content: flex-end;
+    padding        : 0px 20px;
+
+    table {
+        width : 100%;
+        border: none;
+
+        td {
+            border   : none;
+            font-size: 17px;
+        }
+
+        tr td:last-child {
+            text-align   : right;
+            padding-right: 50px;
+        }
+
+        tr:first-child td,
+        tr:nth-child(3) td {
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        tr:last-child td {
+            text-align: right;
+        }
+
+        strong {
+            font-weight: 600;
+        }
+    }
+}
+
+
+/* Collabs Section*/
+.collabs-warp{
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    &:hover .collabs-button{
+        background: #F7F7F7;
+    }
+    .paid-status{
+    border: 1px solid #DEE5EF;
+    padding: 3px 12px;
+    height: 24px;
+    min-width: 63px;
+    font-size: 12px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    }
+    .paid::before{
+        content: " ";
+        width: 5px;
+        height: 5px;
+        border-radius: 100%;
+        background: #0BC196;
+        display: inline-block;
+        margin-right: 5px;
+    }
+    .collabs-button{
+        border: 1px solid #C5C9CD;
+        background: #FCFCFC;
+        border-radius: 4px;
+        padding: 3px 20px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        color: #394A64;
+        i{
+            height: 18px;
+        }
+    }
+}
+.collabs-section{
+    background: #F6F6F6;
+    animation-name: fadesec;
+    animation-duration: 0.2s;
+    .collabs-td{
+        padding: 20px 40px;
+
+    }
+}
+.yr-details-main{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.yesr-detail-table{
+    background: #fff;
+    width: 55%;
+}
+.payment-overview{
+    background: #fff;
+    width: 40%;
+    button{
+    text-transform: uppercase;
+    }
+    table{
+        border: none;
+    }
+    td{
+        border: none;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    th{
+        padding-left: 30px;
+        padding-right: 30px;
+
+    }
+}
+
+@keyframes fadesec {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+/*Final Summary*/
+.final-summary{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    
+    table{
+        width: 100%;
+        td{
+            padding: 7px 20px;
+        }
+        tr td:first-child{
+            text-align: right;
+        }
+        tr td:last-child{
+            width: 150px;
+
+        }
+
+    }
+}
+
+@media (max-width: 1024px) {
+.tax-notes{
+    width: 55%;
+    }
+.total-table{
+    width: 40%;
+    padding: 0;
+}
+.total-table .table{
+    tr td:last-child {
+        padding-right: 20px;
+    }
+}
+}
+
+@media (max-width: 850px) {
+.total-table table td{
+    font-size: 15px;
+}
+.final-summary{
+    padding-right: 0;
+    padding-left: 0;
+}
+.collabs-warp{
+    flex-wrap: wrap;
+    justify-content: center;
+    .paid-status{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Collabs Tabsle Tax Detsils on width 850 */
+.collabs-section .collabs-td{
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+}
+
+@media (max-width: 768px) {
+
+/* Tex Due Table Header on width 768 */
+.tax-due-table  {
+    thead {
+    tr:last-child{
+    display: none;
+    }
+    tr{
+        border-bottom: none;
+    }
+    th{
+        width: 100%;
+    }
+}
+}
+
+/* Tex Due Table Table Body on width 768*/
+.tax-due-table{
+tbody tr {
+    display      : flex;
+    flex-wrap    : wrap;
+    width        : 100%;
+    border-bottom: 2px solid #dee2e6;
+
+    td {
+    width  : 100%;
+    display: flex;
+    text-align: right;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+
+    &:before {
+    content     : attr(data-th);
+    color       : #3D3D3D;
+    margin-right: 10px;
+    display     : inline-block;
+    font-weight : 600;
+    width: 50%;
+    text-align: left;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+}
+}
+}
+
+/* Tex Due Table Footer on width 768*/
+.total-table .table{
+    tr td:first-child {
+        padding-left: 0;
+    }
+    tr td:last-child {
+        padding-right: 0;
+    }
+}
+
+/* Tex Ledger Table Footer on width 768 */
+.text-ledger thead.tax-main-head{
+    tr:last-child{
+        display: none;
+}
+}
+.text-ledger tr.ledger-item{
+    display      : flex;
+    flex-wrap    : wrap;
+    width        : 100%;
+    border-bottom: 2px solid #dee2e6;
+}
+.text-ledger tr.ledger-item td {
+    width  : 100%;
+    text-align: right;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    min-height: 46px;
+    .collabs-warp{
+        width: auto;
+        .paid-status{
+            margin-bottom: 0;
+            margin-right: 20px;
+        }
+    }
+}
+.text-ledger tr.ledger-item td::before {
+    content     : attr(data-th);
+    color       : #3D3D3D;
+    margin-right: 10px;
+    display     : inline-block;
+    font-weight : 600;
+    width: 50%;
+    text-align: left;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+/* Table Colabs Section on Width 768*/
+.yr-details-main{
+    flex-wrap: wrap;
+}
+.collabs-section .collabs-td{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.yesr-detail-table{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.payment-overview{
+    width: 100%;
+}
+.payment-overview th, .payment-overview td{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.yesr-detail-table{
+    table{
+        table-layout: fixed;
+    }
+ td, th{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+}
+}
+
+@media (max-width: 500px) {
+.total-section{
+    flex-wrap: wrap;
+}
+.tax-notes, .total-table{
+    width: 100%;
+}
+}
+@media (max-width: 380px) {
+.yesr-detail-table{
+    th, td{
+        font-size: 12px;
+
+    }
+}
+}
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+.th-bg th {
+    background: #fbfbfb;
+    font-size: 14px;
+    font-weight: 500;
+}
+.table td, .table th {
+    padding: .75rem 1.2rem;
+}
+.table td, .table th {
+    padding: .75rem 1.2rem;
+}
+.table-bordered, .table-bordered td, .table-bordered th {
+    border: 1px solid #dee2e6;
+}
+
+.h2, h2 {
+    font-size: 30px;
+}
+.alltable th {
+    background: #FBFBFB !important;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 21px 33px 17px;
+    color: #3D3D3D;
+}
+
+.alltable td {
+    font-size: 18px;
+    padding: 22px 32px 24px;
+    line-height: 30px;
+}
