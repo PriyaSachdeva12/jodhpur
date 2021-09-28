@@ -173,7 +173,7 @@ button.owl-dot:active {
 
 .total-due p:first-child {
   margin-top: 4px;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 33px;
 }
 
@@ -300,10 +300,11 @@ button.owl-dot:active {
 
 .table-bordered, .table-bordered td, .table-bordered th {
   border: 1px solid #dee2e6;
+  padding: .75rem 1.2rem;
 }
 
 .h2, h2 {
-  font-size: 30px;
+  font-size: 30px !important;
 }
 
 .alltable th {
@@ -316,8 +317,58 @@ button.owl-dot:active {
 }
 
 .alltable td {
+  padding: .75rem 1.2rem;
+  font-size: 18px !important;
+  padding: .75rem 1.2rem;
+  line-height: 30px !important;
+}
+
+.alltable th {
+  background: #FBFBFB !important;
+  font-weight: bold;
   font-size: 18px;
-  padding: 22px 32px 24px;
   line-height: 30px;
+  padding: .75rem 1.2rem;
+  color: #3D3D3D;
+}
+
+.collabs-warp {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.collabs-warp .paid-status {
+  padding: 3px 12px;
+  height: 24px;
+  min-width: 63px;
+  font-size: 12px;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+}
+
+.paid-status {
+  border: 1px solid #dee5ef;
+}
+
+.collabs-warp .paid:before {
+  content: " ";
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background: #0bc196;
+  display: inline-block;
+  margin-right: 5px;
 }
 /*# sourceMappingURL=property-details.css.map */
