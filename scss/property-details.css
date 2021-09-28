@@ -1,6 +1,12 @@
 /* Color*/
 /* Font-weight*/
 /*border*/
+/* Table  Styles */
+h2 {
+  font-size: 24px !important;
+  margin-bottom: 20px;
+}
+
 .alltable th {
   background: #FBFBFB !important;
   font-weight: 600;
@@ -50,6 +56,7 @@
   -webkit-overflow-scrolling: touch;
 }
 
+/* Table property Styles */
 #property-table td {
   padding: 24px;
   font-weight: 400;
@@ -88,6 +95,7 @@ table {
   padding: 4px;
 }
 
+/* Carousel  Styles */
 button.owl-prev {
   position: absolute;
   top: 100px;
@@ -157,11 +165,7 @@ button.owl-dot:active {
   margin-top: 29px;
 }
 
-.stretch-card > .card {
-  width: 100%;
-  min-width: 100%;
-}
-
+/* Total due Styles */
 .total-due {
   margin-bottom: 42px;
   margin-top: 42px;
@@ -191,6 +195,7 @@ button.owl-dot:active {
   color: #3D3D3D;
 }
 
+/* Table Styles */
 .table-area table {
   margin-bottom: 41px;
 }
@@ -206,6 +211,7 @@ button.owl-dot:active {
   color: #3D3D3D;
 }
 
+/* Map Styles */
 .map-section {
   height: 294px;
   padding: 10px 9px;
@@ -215,6 +221,7 @@ button.owl-dot:active {
   margin-bottom: 32px;
 }
 
+/* Form Total Styles */
 .form-total {
   margin-right: 13px;
   margin-top: 5px;
@@ -237,6 +244,7 @@ button.owl-dot:active {
   padding-right: 32px;
 }
 
+/* Particular Styles */
 .particlar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -271,113 +279,45 @@ button.owl-dot:active {
   border-bottom: 1px solid #dee2e6;
 }
 
-@media screen and (max-width: 768px) {
-  h2 {
-    font-weight: 600;
-    font-size: 22px !important;
-    line-height: 100%;
-    letter-spacing: -0.01em;
-    color: #3D3D3D;
-  }
-  .h2 {
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 100%;
-    letter-spacing: -0.01em;
-    color: #3D3D3D;
-  }
-  #carrer {
-    margin-bottom: 20px;
-  }
-  .map-section {
-    height: 228px;
-  }
-  .total-due {
-    margin-bottom: 25px;
-  }
-  .total-due p:first-child {
-    margin-top: 4px;
-    font-size: 16px;
-    line-height: 22px;
-  }
-  .total-due h2 {
-    margin-bottom: 15px;
-  }
-  .total-due .subtotal {
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
-  }
-  .pay-now {
-    font-size: 14px;
-    line-height: 22px;
-    padding: 8px 15px;
-  }
-  .total-due .subtotal {
-    margin-top: 20px;
-    -webkit-box-pack: unset !important;
-        -ms-flex-pack: unset !important;
-            justify-content: unset !important;
-  }
-  #property-table td {
-    padding: 20px;
-    font-size: 16px;
-    line-height: 18px;
-  }
-  #property-table td:nth-child(2n+1) {
-    padding: 20px;
-    font-size: 16px;
-    line-height: 18px;
-  }
-  #property-table th:nth-child(2n+1) {
-    padding: 20px;
-    font-size: 16px;
-    line-height: 18px;
-  }
-  th {
-    padding: 20px;
-    font-size: 16px;
-    line-height: 18px;
-  }
-  .alltable th {
-    background: #FBFBFB !important;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 18px;
-    padding: 20px;
-    color: #3D3D3D;
-  }
-  .alltable td {
-    padding: 20px;
-  }
-  .owertable td {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    color: #3D3D3D;
-  }
-  .p-large {
-    font-size: 14px;
-  }
-  table#transaction th {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 18px;
-    color: #3D3D3D;
-    padding: 24px 27px 22px;
-    padding: 20px;
-  }
-  table#transaction td {
-    padding: 20px;
-    line-height: 18px;
-  }
-  table#transaction td:nth-child(5) {
-    font-size: 14px;
-    line-height: 18px;
-  }
-  .pr-30 {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.th-bg th {
+  background: #fbfbfb;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.table td, .table th {
+  padding: .75rem 1.2rem;
+}
+
+.table td, .table th {
+  padding: .75rem 1.2rem;
+}
+
+.table-bordered, .table-bordered td, .table-bordered th {
+  border: 1px solid #dee2e6;
+}
+
+.h2, h2 {
+  font-size: 30px;
+}
+
+.alltable th {
+  background: #FBFBFB !important;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 21px 33px 17px;
+  color: #3D3D3D;
+}
+
+.alltable td {
+  font-size: 18px;
+  padding: 22px 32px 24px;
+  line-height: 30px;
 }
 /*# sourceMappingURL=property-details.css.map */
