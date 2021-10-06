@@ -57,26 +57,26 @@ h2{
 #property-table {
 	td {
 		&:nth-child(2n+1) {
-			padding: 22px 32px;
+			
 			background:  $lightgrey !important;
 			font-weight: $bold;
-			font-size: 18px;
-			line-height: 25px;
+			font-size: 14px;
+			line-height: 22px;
 			color: $darkgrey;
 		}
-		padding: 24px;
+		
 		font-weight: $normal;
-		font-size: 16px;
+		font-size: 14px;
 		line-height: 22px;
 		color: $darkgrey;
 	}
 	th {
 		&:nth-child(2n+1) {
-			padding: 22px 32px;
+			
 			background: $lightgrey !important;
 			font-weight: $bold;
-			font-size: 18px;
-			line-height: 25px;
+			font-size: 14px;
+			line-height: 22px;
 			color: $darkgrey;
 		}
 	}
@@ -334,4 +334,47 @@ button.owl-dot {
 }
 .h2, h2 {
     font-size: 25px !important;
+	font-weight: 500;
+}
+.table-area h2{
+	margin-bottom: 15px;
+}
+.alltable th {
+    background: #FBFBFB !important;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    padding: .75rem 1.2rem;
+    color: #3D3D3D;
+}
+.alltable td {
+    padding: .75rem 1.2rem;
+    font-size: 14px !important;
+    /* padding: .75rem 1.2rem; */
+    line-height: 22px !important;
+}
+
+.alltable p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    margin-bottom: 0;
+}
+#property-table td:nth-child(2n+1) {
+	padding: .75rem 1.2rem;
+    background: #FBFBFB !important;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #3D3D3D;
+}
+.pay-now {
+    background: #5e2eba;
+    border-radius: .25rem;
+    color: #fff;
+    border: 1px solid #0000;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
 }
